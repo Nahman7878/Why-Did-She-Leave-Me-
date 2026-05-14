@@ -1,90 +1,3 @@
-/* Global Vibe */
-body {
-    background-color: #fcfcfc; 
-    font-family: 'Times New Roman', Times, serif;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#main-container {
-    width: 100%;
-    max-width: 650px;
-    padding: 20px;
-}
-
-/* LOGO */
-#img1 {
-    width: 200px;
-    display: block;
-    margin: 40px auto; /* Centers the logo */
-}
-
-/* Category Titles */
-.category-title {
-    color: #e95e58;
-    border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 10px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Card Style for Questions */
-.question-card {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
-    border: 1px solid #f0f0f0;
-}
-
-h3 {
-    font-size: 19px;
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #222;
-}
-
-/* Radio buttons & Labels */
-label {
-    display: block;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background 0.2s ease;
-}
-
-label:hover {
-    background-color: #fff5f4;
-}
-
-input[type="radio"] {
-    accent-color: #e95e58;  
-    margin-right: 12px;
-    transform: scale(1.1);
-}
-
-footer {
-    width: 100%;
-    text-align: center;
-    padding: 60px 20px;
-    font-size: 14px;
-    color: #999;
-    background-color: #f9f9f9;
-    margin-top: 50px;
-}
-
-/* =========================
-   GLOBAL
-========================= */
 
 *{
     margin:0;
@@ -92,14 +5,22 @@ footer {
     box-sizing:border-box;
 }
 
+/* =========================
+   GLOBAL
+========================= */
+
 html{
     scroll-behavior:smooth;
 }
 
 body{
-    font-family:'Inter', sans-serif;
     background:#fcf8f8;
+
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
     color:#2b1d1f;
+
+    line-height:1.6;
 }
 
 /* =========================
@@ -108,6 +29,7 @@ body{
 
 .page-wrapper{
     width:100%;
+
     max-width:1100px;
 
     margin:auto;
@@ -121,15 +43,17 @@ body{
 ========================= */
 
 #landing-page{
-    min-height:100vh;
-
     display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align: center;
 
-    padding-top:60px;
-    padding-bottom:60px;
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding-top:20px;
+
+    padding-bottom:20px;
 }
 
 /* =========================
@@ -138,9 +62,8 @@ body{
 
 .hero-content{
     width:100%;
-    max-width:760px;
 
-    text-align:center;
+    max-width:760px;
 }
 
 /* =========================
@@ -148,11 +71,22 @@ body{
 ========================= */
 
 .logo-wrapper{
-    margin-bottom:34px;
+    margin-bottom:5px;
 }
 
-.logo-wrapper img{
-    width:85px;
+#img1{
+    width:200px;
+
+    display:block;
+
+    margin:auto;
+
+    /* OPTIONAL SHADOW */
+
+    /*
+    box-shadow:
+    0 4px 20px rgba(233,94,88,0.35);
+    */
 }
 
 /* =========================
@@ -160,8 +94,6 @@ body{
 ========================= */
 
 .hero-title{
-    font-family:'Playfair Display', serif;
-
     font-size:clamp(3rem, 7vw, 6rem);
 
     line-height:0.92;
@@ -170,9 +102,7 @@ body{
 
     letter-spacing:-3px;
 
-    color:#2b1d1f;
-
-    margin-bottom:28px;
+    margin-bottom:24px;
 }
 
 /* =========================
@@ -180,11 +110,11 @@ body{
 ========================= */
 
 .hero-subtitle{
-    font-size:clamp(1.1rem, 2vw, 1.5rem);
+    font-size:1.2rem;
 
     color:#6e6668;
 
-    margin-bottom:18px;
+    margin-bottom:16px;
 }
 
 /* =========================
@@ -192,15 +122,13 @@ body{
 ========================= */
 
 .hero-quote{
-    font-size:clamp(1rem, 1.8vw, 1.2rem);
+    font-size:1.05rem;
 
     color:#a79b9f;
 
     font-style:italic;
 
-    line-height:1.6;
-
-    margin-bottom:55px;
+    margin-bottom:42px;
 }
 
 /* =========================
@@ -208,36 +136,41 @@ body{
 ========================= */
 
 .hero-btn{
-    width:280px;
-    height:78px;
+    width:260px;
+
+    height:72px;
 
     margin:auto;
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
     background:#cf738c;
 
-    border-radius:999px;
+    color:white;
 
     text-decoration:none;
 
-    color:white;
+    border-radius:999px;
 
-    font-size:1.25rem;
+    font-size:1.2rem;
+
     font-weight:600;
 
     transition:0.25s ease;
 
     box-shadow:
-    0 12px 28px rgba(207,115,140,0.25);
+    0 10px 25px rgba(207,115,140,0.25);
 
-    margin-bottom:28px;
+    margin-bottom:24px;
 }
 
 .hero-btn:hover{
     transform:translateY(-3px);
+
     background:#c96882;
 }
 
@@ -250,35 +183,40 @@ body{
 
     font-size:0.95rem;
 
-    margin-bottom:120px;
+    margin-bottom:40px;
 }
 
 /* =========================
-   FOOTER
+   LANDING FOOTER
 ========================= */
 
 .landing-footer{
     width:100%;
+
     max-width:420px;
 
     margin:auto;
 
-    border-top:1px solid rgba(0,0,0,0.06);
+    border-top:
+    1px solid rgba(0,0,0,0.06);
 
-    padding-top:30px;
+    padding-top:20px;
 }
 
 .footer-domain{
     display:flex;
+
     justify-content:center;
+
     align-items:center;
+
     gap:10px;
 
-    font-size:1.05rem;
+    font-size:1rem;
 
     color:#7d7175;
 
-    margin-bottom:22px;
+    margin-bottom:18px;
 }
 
 .footer-heart{
@@ -294,55 +232,266 @@ body{
 }
 
 /* =========================
-   SURVEY SECTION
+   SURVEY
 ========================= */
 
 #main-container{
     width:100%;
+
     max-width:850px;
 
     margin:auto;
 
+    padding-top:20px;
+
     padding-bottom:120px;
+
+    display:none;
 }
 
 /* =========================
-   QUESTION CARDS
+   CATEGORY TITLES
+========================= */
+
+.category-title{
+    color:#e95e58;
+
+    border-bottom:
+    2px solid #f0f0f0;
+
+    padding-bottom:10px;
+
+    text-align:center;
+
+    margin-top:40px;
+
+    margin-bottom:24px;
+
+    font-size:1.8rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+}
+
+/* =========================
+   QUESTION CARD
 ========================= */
 
 .question-card{
     background:white;
 
-    border-radius:22px;
+    padding:28px;
 
-    padding:35px;
+    border-radius:18px;
 
-    margin-bottom:30px;
+    border:
+    1px solid #f0f0f0;
+
+    margin-bottom:24px;
 
     box-shadow:
     0 4px 18px rgba(0,0,0,0.04);
 }
 
 /* =========================
-   DESKTOP IMPROVEMENTS
+   QUESTION TEXT
+========================= */
+
+h3{
+    font-size:19px;
+
+    margin-bottom:20px;
+
+    color:#222;
+}
+
+/* =========================
+   LABELS
+========================= */
+
+label{
+    display:block;
+
+    padding:12px 14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:0.2s ease;
+}
+
+label:hover{
+    background:#fff5f4;
+}
+
+label.selected{
+    background:#fde7ed;
+    border:1px solid rgba(207,115,140,0.35);
+}
+
+label.selected input[type="radio"]{
+    accent-color:#d06b86;
+}
+
+/* =========================
+   RADIO BUTTONS
+========================= */
+
+input[type="radio"]{
+    accent-color:#e95e58;
+
+    margin-right:12px;
+
+    transform:scale(1.1);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    width:100%;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    font-size:14px;
+
+    color:#999;
+
+    background:#f9f9f9;
+
+    margin-top:50px;
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.submit-container{
+    text-align:center;
+
+    margin:40px 0 60px 0;
+}
+
+.submit-btn{
+    width:280px;
+
+    height:72px;
+
+    background:#cf738c;
+
+    color:white;
+
+    border:none;
+
+    border-radius:999px;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+    transition:0.25s ease;
+
+    box-shadow:
+    0 10px 25px rgba(207,115,140,0.25);
+
+    cursor:pointer;
+
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.submit-btn:hover{
+    transform:translateY(-3px);
+
+    background:#c96882;
+}
+
+/* =========================
+   RESULT CARD
+========================= */
+
+.result-card{
+    display:none;
+    width:100%;
+    max-width:760px;
+    margin:30px auto 60px auto;
+    background:#ffffff;
+    border:1px solid #f0f0f0;
+    border-radius:22px;
+    box-shadow:0 18px 40px rgba(0,0,0,0.06);
+    text-align:center;
+    padding:34px 28px;
+}
+
+.result-card.visible{
+    display:block;
+}
+
+.result-card h2{
+    margin-bottom:18px;
+    font-size:2rem;
+    color:#2b1d1f;
+}
+
+.result-card p{
+    color:#6e6668;
+    line-height:1.8;
+    font-size:1rem;
+    margin-bottom:26px;
+}
+
+/* =========================
+   MOBILE
 ========================= */
 
 @media(max-width:768px){
 
-    #landing-page{
-        padding-top:40px;
-        padding-bottom:40px;
+    .hero-title{
+        font-size:3.4rem;
     }
 
     .hero-btn{
-        width:240px;
-        height:70px;
+        width:230px;
 
-        font-size:1.1rem;
+        height:68px;
+
+        font-size:1.05rem;
     }
 
     .question-card{
-        padding:24px;
+        padding:16px;
+        margin-bottom:16px;
+    }
+
+    #img1{
+        width:170px;
+    }
+
+    .category-title{
+        font-size:1.3rem;
+        margin-top:28px;
+        margin-bottom:16px;
+        padding-bottom:8px;
+    }
+
+    h3{
+        font-size:16px;
+        margin-bottom:14px;
+    }
+
+    label{
+        padding:10px 12px;
+        margin-bottom:8px;
+    }
+
+    .submit-btn{
+        width:240px;
+        height:68px;
+        font-size:1.1rem;
     }
 
 }
