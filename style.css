@@ -1,0 +1,348 @@
+/* Global Vibe */
+body {
+    background-color: #fcfcfc; 
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-container {
+    width: 100%;
+    max-width: 650px;
+    padding: 20px;
+}
+
+/* LOGO */
+#img1 {
+    width: 200px;
+    display: block;
+    margin: 40px auto; /* Centers the logo */
+}
+
+/* Category Titles */
+.category-title {
+    color: #e95e58;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Card Style for Questions */
+.question-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    border: 1px solid #f0f0f0;
+}
+
+h3 {
+    font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Radio buttons & Labels */
+label {
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+label:hover {
+    background-color: #fff5f4;
+}
+
+input[type="radio"] {
+    accent-color: #e95e58;  
+    margin-right: 12px;
+    transform: scale(1.1);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 14px;
+    color: #999;
+    background-color: #f9f9f9;
+    margin-top: 50px;
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter', sans-serif;
+    background:#fcf8f8;
+    color:#2b1d1f;
+}
+
+/* =========================
+   PAGE WRAPPER
+========================= */
+
+.page-wrapper{
+    width:100%;
+    max-width:1100px;
+
+    margin:auto;
+
+    padding-left:24px;
+    padding-right:24px;
+}
+
+/* =========================
+   LANDING PAGE
+========================= */
+
+#landing-page{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content{
+    width:100%;
+    max-width:760px;
+
+    text-align:center;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-wrapper{
+    margin-bottom:34px;
+}
+
+.logo-wrapper img{
+    width:85px;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.hero-title{
+    font-family:'Playfair Display', serif;
+
+    font-size:clamp(3rem, 7vw, 6rem);
+
+    line-height:0.92;
+
+    font-weight:800;
+
+    letter-spacing:-3px;
+
+    color:#2b1d1f;
+
+    margin-bottom:28px;
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.hero-subtitle{
+    font-size:clamp(1.1rem, 2vw, 1.5rem);
+
+    color:#6e6668;
+
+    margin-bottom:18px;
+}
+
+/* =========================
+   QUOTE
+========================= */
+
+.hero-quote{
+    font-size:clamp(1rem, 1.8vw, 1.2rem);
+
+    color:#a79b9f;
+
+    font-style:italic;
+
+    line-height:1.6;
+
+    margin-bottom:55px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.hero-btn{
+    width:280px;
+    height:78px;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#cf738c;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:1.25rem;
+    font-weight:600;
+
+    transition:0.25s ease;
+
+    box-shadow:
+    0 12px 28px rgba(207,115,140,0.25);
+
+    margin-bottom:28px;
+}
+
+.hero-btn:hover{
+    transform:translateY(-3px);
+    background:#c96882;
+}
+
+/* =========================
+   HELPER TEXT
+========================= */
+
+.hero-helper{
+    color:#b0a4a8;
+
+    font-size:0.95rem;
+
+    margin-bottom:120px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.landing-footer{
+    width:100%;
+    max-width:420px;
+
+    margin:auto;
+
+    border-top:1px solid rgba(0,0,0,0.06);
+
+    padding-top:30px;
+}
+
+.footer-domain{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+    font-size:1.05rem;
+
+    color:#7d7175;
+
+    margin-bottom:22px;
+}
+
+.footer-heart{
+    color:#d28398;
+}
+
+.footer-text{
+    color:#b0a4a8;
+
+    font-size:0.95rem;
+
+    line-height:1.5;
+}
+
+/* =========================
+   SURVEY SECTION
+========================= */
+
+#main-container{
+    width:100%;
+    max-width:850px;
+
+    margin:auto;
+
+    padding-bottom:120px;
+}
+
+/* =========================
+   QUESTION CARDS
+========================= */
+
+.question-card{
+    background:white;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    margin-bottom:30px;
+
+    box-shadow:
+    0 4px 18px rgba(0,0,0,0.04);
+}
+
+/* =========================
+   DESKTOP IMPROVEMENTS
+========================= */
+
+@media(max-width:768px){
+
+    #landing-page{
+        padding-top:40px;
+        padding-bottom:40px;
+    }
+
+    .hero-btn{
+        width:240px;
+        height:70px;
+
+        font-size:1.1rem;
+    }
+
+    .question-card{
+        padding:24px;
+    }
+
+}

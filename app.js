@@ -1,0 +1,1 @@
+let stagnationAudit = "According to our analysis, the relationship did not end due to a major failure. It ended due to prolonged exposure to sameness. Behavioural patterns suggest the relationship gradually transitioned from emotionally engaging to structurally familiar.";
